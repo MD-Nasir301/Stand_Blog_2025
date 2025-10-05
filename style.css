@@ -1,0 +1,39 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* FLEX UTILITY */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    color: rgb(27, 21, 21);
+    padding: 10px 20px;
+    justify-content: space-between;
+    background: rgba(205, 189, 168, 0.348)
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+}
+.navbar .nav-links li a {
+    color: rgb(41, 25, 25);
+    text-decoration: none;
+}
+
+
