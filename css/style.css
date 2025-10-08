@@ -66,7 +66,6 @@ p {
   color: var(--theme-text-secondary);
   line-height: 30px;
 }
-
 a {
   text-decoration: none;
   color: var(--theme-text-primary);
