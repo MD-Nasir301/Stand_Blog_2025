@@ -52,6 +52,12 @@ body {
 .text-black {
   color: var(--text-black);
 }
+.text-white {
+  color: var(--text-white);
+}
+.upper {
+  text-transform: uppercase;
+}
 /* ========== TYPOGRAPHY ========== */
 /* Headings */
 h1,
@@ -106,10 +112,11 @@ ul {
 }
 
 /* ========== MAIN CSS START HERE ========== */
-
+/* Header And Navbar */
 header {
   background: rgb(247, 247, 247);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .navbar {
   display: flex;
@@ -138,6 +145,47 @@ header {
   padding: 23px;
   font-size: 16px;
   font-weight: 800;
+}
+/* slider */
+.slider-area {
+  padding-left: 10px;
+}
+.slider-item {
+  max-width: 425px;
+  height: auto;
+  position: relative;
+}
+.slider-item img {
+  max-width: 100%;
+}
+.slider-item-content {
+  position: absolute;
+  bottom: 12%;
+  padding: 0 40px;
+}
+.slider-post-description  {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 5px 0px 10px;
+}
+.slider-post-info {
+  display: flex;
+}
+.slider-post-info li {
+  padding: 0 10px;
+   border-right: 2px solid white;
+}
+.slider-item-content li:first-child {
+  padding-left: 0;
+}
+.slider-item-content li:last-child {
+  border: 0px;
+}
+.slider-post-info li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: white; 
+  line-height: 14px;
 }
 
 /* ===========================================================
