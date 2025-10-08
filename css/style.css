@@ -49,7 +49,9 @@ body {
 .theme-text-secondary {
   color: var(--theme-text-secondary);
 }
-
+.text-black {
+  color: var(--text-black);
+}
 /* ========== TYPOGRAPHY ========== */
 /* Headings */
 h1,
@@ -69,11 +71,12 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--theme-text-primary);
+  color: var(--text-black);
   transition: color 0.2s;
+  display: block;
 }
 a:hover {
-  color: var(--theme-bg-primary);
+  color: var(--theme-bg-primary);3
 }
 
 /* ========== LISTS ========== */
@@ -98,9 +101,44 @@ ul {
   padding-left: var(--space-md);
   padding-right: var(--space-md);
 }
+.active {
+  color: var(--theme-text-primary);
+}
 
 /* ========== MAIN CSS START HERE ========== */
-/* Add your custom styles below this line */
+
+header {
+  background: rgb(247, 247, 247);
+  text-transform: uppercase;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.nav-brand-logo {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.navbar > a:hover {
+  color: #221a15;
+}
+.nav-brand-logo > span {
+  font-size: 50px;
+  font-weight: 900;
+}
+.navbar-links {
+  display: flex;
+  font-weight: 900;
+}
+.navbar-links .nav-link {
+  padding: 23px;
+  font-size: 16px;
+  font-weight: 800;
+}
 
 /* ===========================================================
    End of Stylesheet
