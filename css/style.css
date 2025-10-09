@@ -147,8 +147,8 @@ header {
   font-weight: 800;
 }
 /* slider */
-.slider-area {
-  padding-left: 10px;
+.slider-area{
+  padding-left: 8px;
 }
 .slider-item {
   max-width: 425px;
@@ -168,10 +168,10 @@ header {
   font-weight: 900;
   margin: 5px 0px 10px;
 }
-.slider-post-info {
+.slider.post-info {
   display: flex;
 }
-.slider-post-info li {
+.slider.post-info li {
   padding: 0 10px;
    border-right: 2px solid white;
 }
@@ -181,11 +181,37 @@ header {
 .slider-item-content li:last-child {
   border: 0px;
 }
-.slider-post-info li a {
+.slider.post-info li a {
   font-size: 14px;
   font-weight: 500;
   color: white; 
   line-height: 14px;
+}
+/* Call to action -------------------------- */
+.call-to-action-area {
+  padding: 45px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+.call-to-action-area .content h3 {
+  margin: 0px 0 10px;
+}
+.call-to-action-area .content h2 {
+  font-size: 30px;
+  line-height: 1;
+}
+.call-to-btn > a {
+  display: block;
+  font-size: 14px;
+  padding: 10px 20px; 
+  transition: .5s;
+}
+.call-to-btn > a:hover {
+  color: #ffffff;
+  font-weight: 900;
+  background: hsl(21, 80%, 52%);
 }
 
 /* ===========================================================
