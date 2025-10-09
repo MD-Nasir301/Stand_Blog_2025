@@ -227,18 +227,20 @@ header {
   background: hsl(21, 80%, 52%);
 }
 
-
 /* blog-post area --------------- */
 .blog-section {
   margin-top: 100px;
 }
 .blog-area {
   display: flex;
+  justify-content: space-between;
+  }
+  .all-blogs {
+    max-width: 66%;
   }
 .single-blog-area {
-  max-width: 78%;
   border: 1px solid rgba(254, 217, 217, 0.831);
-
+  margin-bottom: 30px;
 }
 .blog-area img {
   width: 100%;
@@ -286,6 +288,10 @@ header {
 }
 .post-footer-area {
   padding: 25px 0 4px;
+}
+/* aside --------------------- */
+.aside {
+    max-width: 30%;
 }
 
 
