@@ -2,7 +2,7 @@
 :root {
   --theme-text-primary: rgb(244, 136, 64);
   --theme-text-secondary: rgb(122, 122, 122);
-  --text-gray: rgb(170, 170, 170);
+  --text-gray: rgb(245, 146, 146);
   --text-black: #221a15;
   --text-white: #ffffff;
   --theme-bg-primary: #fb9857;
@@ -55,9 +55,24 @@ body {
 .text-white {
   color: var(--text-white);
 }
+.text-gray {
+  color: var(--text-gray);
+}
 .upper {
   text-transform: uppercase;
 }
+.fw-900 {
+  font-weight: 900;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+
 /* ========== TYPOGRAPHY ========== */
 /* Headings */
 h1,
@@ -77,9 +92,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--text-black);
   transition: color 0.2s;
-  display: block;
 }
 a:hover {
   color: var(--theme-bg-primary);3
@@ -168,10 +181,10 @@ header {
   font-weight: 900;
   margin: 5px 0px 10px;
 }
-.slider.post-info {
+.post-info {
   display: flex;
 }
-.slider.post-info li {
+.post-info li {
   padding: 0 10px;
    border-right: 2px solid white;
 }
@@ -181,7 +194,7 @@ header {
 .slider-item-content li:last-child {
   border: 0px;
 }
-.slider.post-info li a {
+.post-info li a {
   font-size: 14px;
   font-weight: 500;
   color: white; 
@@ -213,6 +226,68 @@ header {
   font-weight: 900;
   background: hsl(21, 80%, 52%);
 }
+
+
+/* blog-post area --------------- */
+.blog-section {
+  margin-top: 100px;
+}
+.blog-area {
+  display: flex;
+  }
+.single-blog-area {
+  max-width: 78%;
+  border: 1px solid rgba(254, 217, 217, 0.831);
+
+}
+.blog-area img {
+  width: 100%;
+  height: auto;
+}
+.blog.content-area {
+  padding: 35px 40px;
+}
+.title-area h3 {
+  font-size: 18px;
+}
+.title-area h2 a {
+  display: block;
+  font-size: 20px;
+  color: var(--text-black);
+  font-weight: 900;
+  margin: 15px 0;
+}
+.blog.post-info {
+  border-bottom: 1px solid rgba(254, 217, 217, 0.831);
+}
+.blog.post-info li a {
+  color: var(--text-gray);
+  font-weight: 400;
+}
+.blog.post-info li {
+  border-right: 2px solid  var(--text-gray);
+  line-height: 3px;
+  margin-bottom: 25px;
+}
+.blog.post-info li:first-child {
+  padding-left: 0;
+}
+.blog.post-info li:last-child{
+  border: 0px;
+}
+.post-description {
+  padding: 25px 0;
+  text-align: justify;
+  border-bottom: 1px solid rgba(254, 217, 217, 0.831);
+}
+.post-description p a {
+  color: blue;
+  padding: 8px;
+}
+.post-footer-area {
+  padding: 25px 0 4px;
+}
+
 
 /* ===========================================================
    End of Stylesheet
