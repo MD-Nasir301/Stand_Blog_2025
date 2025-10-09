@@ -168,10 +168,10 @@ header {
   font-weight: 900;
   margin: 5px 0px 10px;
 }
-.slider-post-info {
+.slider.post-info {
   display: flex;
 }
-.slider-post-info li {
+.slider.post-info li {
   padding: 0 10px;
    border-right: 2px solid white;
 }
@@ -181,7 +181,7 @@ header {
 .slider-item-content li:last-child {
   border: 0px;
 }
-.slider-post-info li a {
+.slider.post-info li a {
   font-size: 14px;
   font-weight: 500;
   color: white; 
