@@ -405,6 +405,9 @@ footer {
   border-right: 2px solid white;
   line-height: 20px;
 }
+.footer-social-links li:last-child {
+  border-right: 0px;
+}
 .footer-social-links li a {
   color: white;
   font-size: 14px;
