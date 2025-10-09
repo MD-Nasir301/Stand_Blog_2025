@@ -2,7 +2,7 @@
 :root {
   --theme-text-primary: rgb(244, 136, 64);
   --theme-text-secondary: rgb(122, 122, 122);
-  --text-gray: rgb(245, 146, 146);
+  --text-gray: rgba(245, 146, 146, 0.714);
   --text-black: #221a15;
   --text-white: #ffffff;
   --theme-bg-primary: #fb9857;
@@ -72,6 +72,10 @@ body {
 .mr-5 {
   margin-right: 5px;
 }
+.bb {
+  border-bottom: 1px solid rgb(255, 222, 222);
+  padding-bottom: 10px;
+}
 
 /* ========== TYPOGRAPHY ========== */
 /* Headings */
@@ -95,7 +99,7 @@ a {
   transition: color 0.2s;
 }
 a:hover {
-  color: var(--theme-bg-primary);3
+  color: var(--theme-bg-primary) !important;
 }
 
 /* ========== LISTS ========== */
@@ -160,7 +164,7 @@ header {
   font-weight: 800;
 }
 /* slider */
-.slider-area{
+.slider-area {
   padding-left: 8px;
 }
 .slider-item {
@@ -176,7 +180,7 @@ header {
   bottom: 12%;
   padding: 0 40px;
 }
-.slider-post-description  {
+.slider-post-description {
   font-size: 24px;
   font-weight: 900;
   margin: 5px 0px 10px;
@@ -186,7 +190,7 @@ header {
 }
 .post-info li {
   padding: 0 10px;
-   border-right: 2px solid white;
+  border-right: 2px solid white;
 }
 .slider-item-content li:first-child {
   padding-left: 0;
@@ -197,7 +201,7 @@ header {
 .post-info li a {
   font-size: 14px;
   font-weight: 500;
-  color: white; 
+  color: white;
   line-height: 14px;
 }
 /* Call to action -------------------------- */
@@ -218,8 +222,8 @@ header {
 .call-to-btn > a {
   display: block;
   font-size: 14px;
-  padding: 10px 20px; 
-  transition: .5s;
+  padding: 10px 20px;
+  transition: 0.5s;
 }
 .call-to-btn > a:hover {
   color: #ffffff;
@@ -234,10 +238,10 @@ header {
 .blog-area {
   display: flex;
   justify-content: space-between;
-  }
-  .all-blogs {
-    max-width: 66%;
-  }
+}
+.all-blogs {
+  max-width: 66%;
+}
 .single-blog-area {
   border: 1px solid rgba(254, 217, 217, 0.831);
   margin-bottom: 30px;
@@ -267,14 +271,14 @@ header {
   font-weight: 400;
 }
 .blog.post-info li {
-  border-right: 2px solid  var(--text-gray);
+  border-right: 2px solid var(--text-gray);
   line-height: 3px;
   margin-bottom: 25px;
 }
 .blog.post-info li:first-child {
   padding-left: 0;
 }
-.blog.post-info li:last-child{
+.blog.post-info li:last-child {
   border: 0px;
 }
 .post-description {
@@ -291,9 +295,81 @@ header {
 }
 /* aside --------------------- */
 .aside {
-    max-width: 30%;
+  max-width: 29%;
 }
-
+.aside input {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(250, 203, 203);
+  margin-bottom: 50px;
+}
+.aside input::placeholder {
+  color: rgb(244, 161, 161);
+}
+/* resent-post-area */
+.recent-posts-area {
+  margin-bottom: 25px;
+}
+.recent-posts-area h3 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(255, 208, 208);
+}
+.post-links li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(255, 207, 207);
+}
+.post-links li:last-child {
+  border-bottom: 0;
+}
+.post-links li a {
+  font-size: 19px;
+  color: var(--text-black);
+  font-weight: 900;
+}
+.post-links li a span {
+  font-size: 14px;
+  color: var(--text-gray);
+  font-weight: 400;
+}
+.post-links li a:hover {
+  color: var(--theme-text-primary);
+}
+/* categories  */
+.caregories-area {
+  margin-bottom: 30px;
+}
+.categories-list {
+  margin-top: 20px;
+}
+.categories-list li a {
+  color: var(--text-black);
+  font-weight: 700;
+  display: block;
+  padding: 7px 0;
+}
+.categories-list li a::before {
+  content: "- ";
+}
+/* tag clouds area */
+.tag-list {
+  padding: 20px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag-list li a {
+  padding: 5px 15px;
+  border: 1px solid rgba(249, 206, 206, 0.6);
+  color: var(--text-gray);
+  font-weight: 500;
+  display: block;
+  transition: .5s;
+}
+.tag-list li a:hover {
+  background-color: var(--theme-bg-primary);
+  color: #ffffff !important;
+}
 
 /* ===========================================================
    End of Stylesheet
