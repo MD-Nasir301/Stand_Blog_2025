@@ -97,9 +97,11 @@ p {
 a {
   text-decoration: none;
   transition: color 0.2s;
+  color: black;
 }
 a:hover {
-  color: var(--theme-bg-primary) !important;
+  cursor: pointer;
+  color: rgb(244, 136, 64) !important;
 }
 
 /* ========== LISTS ========== */
@@ -147,8 +149,8 @@ header {
   font-weight: 900;
   margin-bottom: 20px;
 }
-.navbar > a:hover {
-  color: #221a15;
+a.nav-brand-logo:hover {
+  color: #221a15 !important;
 }
 .nav-brand-logo > span {
   font-size: 50px;
@@ -293,6 +295,21 @@ header {
 .post-footer-area {
   padding: 25px 0 4px;
 }
+.all-post-btn {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+  background: rgb(255, 136, 0);
+  transition: 0.5s;
+}
+
+.all-post-btn:hover {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
 /* aside --------------------- */
 .aside {
   max-width: 29%;
@@ -364,13 +381,45 @@ header {
   color: var(--text-gray);
   font-weight: 500;
   display: block;
-  transition: .5s;
+  transition: 0.5s;
 }
 .tag-list li a:hover {
   background-color: var(--theme-bg-primary);
   color: #ffffff !important;
 }
 
-/* ===========================================================
+/* 
+/* footer------------------------------- */
+footer {
+  margin-top: 100px;
+}
+.footer-social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 60px 0;
+  border-bottom: 1px solid gray;
+}
+.footer-social-links li {
+  padding: 0 20px;
+  border-right: 2px solid white;
+  line-height: 20px;
+}
+.footer-social-links li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.copy-write-info {
+  text-align: center;
+  padding: 60px 0;
+  border-bottom: 1px solid gray;
+}
+.copy-write-info span > a {
+  color: red;
+}
+/*
+===========================================================
    End of Stylesheet
    =========================================================== */
