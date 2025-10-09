@@ -147,8 +147,8 @@ header {
   font-weight: 800;
 }
 /* slider */
-.slider-area {
-  padding-left: 10px;
+.slider-area{
+  padding-left: 8px;
 }
 .slider-item {
   max-width: 425px;
