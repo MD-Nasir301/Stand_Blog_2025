@@ -6,7 +6,7 @@
   --text-black: #221a15;
   --text-white: #ffffff;
   --theme-bg-primary: #fb9857;
-  --theme-bg-secondary: rgb(33, 37, 41);
+  --theme-bg-secondary: rgb(32, 35, 46);
   --bg-white: #ffffff;
   /* Spacing & Layout */
   --space-xs: 4px;
@@ -405,12 +405,12 @@ footer {
   gap: 10px;
   justify-content: center;
   padding: 60px 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.457);
 }
 .footer-social-links li {
-  padding: 0 20px;
+  padding: 0 30px;
   border-right: 2px solid white;
-  line-height: 20px;
+  line-height: 15px;
 }
 .footer-social-links li:last-child {
   border-right: 0px;
@@ -472,7 +472,26 @@ footer {
   border-bottom: 1px solid rgba(255, 221, 221, 0.885);
   gap: 50px;
 }
-
+/* social links------------ */
+.social-links-area {
+  margin-top: 50px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-links li a {
+  display: block;
+  font-size: 15px;
+  color: white;
+  background: #412323;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
 /*
 ===========================================================
    End of Stylesheet
