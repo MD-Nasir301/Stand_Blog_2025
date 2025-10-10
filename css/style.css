@@ -248,10 +248,10 @@ a.nav-brand-logo:hover {
   display: flex;
   justify-content: space-between;
 }
-.all-blogs {
+.all-blogs-area {
   max-width: 66%;
 }
-.single-blog-area {
+.single-blog {
   border: 1px solid rgba(254, 217, 217, 0.831);
   margin-bottom: 30px;
 }
@@ -506,12 +506,12 @@ footer {
 }
 /* blog page----------------------- */
 
-.blog.all-blogs {
+.blog.all-blogs-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.blog.single-blog-area {
+.blog.single-blog {
   width: 48%;
 }
 .blog .blog-thum {
@@ -525,7 +525,7 @@ footer {
   object-fit: cover;
   object-position: center;
 }
-.blog .single-blog-area {
+.blog .single-blog {
   border: 0;
   padding: 0;
 }
