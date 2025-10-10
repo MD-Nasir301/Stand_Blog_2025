@@ -107,7 +107,7 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: rgb(244, 136, 64) !important;
+  color: rgb(244, 136, 64);
 }
 
 /* ========== LISTS ========== */
@@ -248,10 +248,10 @@ a.nav-brand-logo:hover {
   display: flex;
   justify-content: space-between;
 }
-.all-blogs {
+.all-blogs-area {
   max-width: 66%;
 }
-.single-blog-area {
+.single-blog {
   border: 1px solid rgba(254, 217, 217, 0.831);
   margin-bottom: 30px;
 }
@@ -271,6 +271,9 @@ a.nav-brand-logo:hover {
   color: var(--text-black);
   font-weight: 900;
   margin: 15px 0;
+}
+.title-area h2 a:hover {
+  color: var(--theme-text-primary);
 }
 .blog.post-info {
   border-bottom: 1px solid rgba(254, 217, 217, 0.831);
@@ -372,6 +375,9 @@ a.nav-brand-logo:hover {
   display: block;
   padding: 7px 0;
 }
+.categories-list li a:hover {
+  color: var(--theme-text-primary);
+}
 .categories-list li a::before {
   content: "- ";
 }
@@ -419,6 +425,9 @@ footer {
   color: white;
   font-size: 14px;
   font-weight: 500;
+}
+.footer-social-links li a:hover {
+  color: rgb(220, 103, 1);
 }
 
 .copy-write-info {
@@ -472,7 +481,7 @@ footer {
   border-bottom: 1px solid rgba(255, 221, 221, 0.885);
   gap: 50px;
 }
-/* social links------------ */
+/* about-us page social links------------ */
 .social-links-area {
   margin-top: 50px;
 }
@@ -492,6 +501,172 @@ footer {
   text-align: center;
   line-height: 40px;
 }
+.social-links li a:hover {
+  color: rgb(153, 237, 18);
+}
+/* blog page----------------------- */
+
+.blog.all-blogs-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog.single-blog {
+  width: 48%;
+}
+.blog .blog-thum {
+  height: 324px;
+  width: 350px;
+  overflow: hidden;
+}
+.blog .blog-thum img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog .single-blog {
+  border: 0;
+  padding: 0;
+}
+.singel-blog-border {
+  border: 1px solid rgb(253, 215, 215);
+}
+/* pagination ------------------- */
+.page-links {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+}
+.page-links {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+  gap: 10px;
+}
+.page-links li a {
+  display: block;
+  color: gray;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 200, 200);
+}
+.page-links li a.page-active {
+  background: orange;
+  color: white;
+}
+.page-links li a:hover {
+  background: orange;
+  color: white;
+}
+/* Post-details page ----------------------------------------- */
+.comment-section {
+  margin-bottom: 30px;
+}
+.comment-section h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 228, 228);
+}
+.comment-area {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 213, 213);
+}
+.person-pic {
+  width: 100px;
+  height: 100px;
+}
+.person-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comment-content {
+  width: 82%;
+}
+.person-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.comment-date {
+  color: rgb(238, 163, 163);
+}
+.comment-text {
+  text-align: justify;
+}
+.reply.comment-area {
+  margin-left: 100px;
+}
+.reply.comment-content {
+  width: 80%;
+}
+.form-area .title {
+  color: black;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(255, 212, 212);
+}
+.form input,
+textarea {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid rgb(249, 215, 215);
+}
+.name_email {
+  display: flex;
+  gap: 30px;
+}
+textarea.comment-box {
+  min-width: 100%;
+  height: 220px;
+}
+textarea.comment-box::placeholder {
+  font-size: 15px;
+  color: var(--text-gray);
+}
+button.submit-btn {
+  display: block;
+  padding: 15px 20px;
+  border: 0;
+  margin-top: 30px;
+}
+button.submit-btn:hover {
+  font-weight: 700;
+}
+
+/* Contact-us page ----------------------------- */
+.contact-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.contact-us.form-area {
+  width: 87%;
+}
+.contact-info .title {
+  color: var(--text-black);
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(254, 219, 219);
+}
+.contact-info-list li {
+  padding: 20px 35px 20px 5px;
+  border-bottom: 1px solid rgb(254, 219, 219);
+  font-size: 18px;
+  font-weight: 900;
+}
+.contact-info-list li span {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--text-gray);
+  margin-top: 5px;
+  display: inline-block;
+}
+
 /*
 ===========================================================
    End of Stylesheet
