@@ -165,7 +165,8 @@ a.nav-brand-logo:hover {
   font-size: 16px;
   font-weight: 800;
 }
-/* slider */
+
+/* slider ---------------------------------------*/
 .slider-area {
   padding-left: 8px;
 }
@@ -422,6 +423,16 @@ footer {
 .copy-write-info span > a {
   color: red;
 }
+
+/* ABOUT US -------------------------------------------- */
+
+
+
+
+
+
+
+
 /*
 ===========================================================
    End of Stylesheet
