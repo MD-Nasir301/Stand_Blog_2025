@@ -558,6 +558,50 @@ footer {
   background: orange;
   color: white;
 }
+/* Post-details page ----------------------------------------- */
+
+.comment-section h2 {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 228, 228);
+}
+.comment-area {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 213, 213);
+}
+.person-pic {
+  width: 100px;
+  height: 100px;
+}
+.person-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comment-content {
+  width: 82%;
+}
+.person-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.comment-date {
+  color: rgb(238, 163, 163);
+}
+.comment-text {
+  text-align: justify;
+}
+.reply.comment-area {
+  margin-left: 100px;
+}
+.reply.comment-content {
+  width: 80%;
+}
+
 /*
 ===========================================================
    End of Stylesheet
