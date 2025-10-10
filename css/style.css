@@ -107,7 +107,7 @@ a {
 }
 a:hover {
   cursor: pointer;
-  color: rgb(244, 136, 64) !important;
+  color: rgb(244, 136, 64);
 }
 
 /* ========== LISTS ========== */
@@ -272,6 +272,9 @@ a.nav-brand-logo:hover {
   font-weight: 900;
   margin: 15px 0;
 }
+.title-area h2 a:hover {
+  color: var(--theme-text-primary);
+}
 .blog.post-info {
   border-bottom: 1px solid rgba(254, 217, 217, 0.831);
 }
@@ -371,6 +374,9 @@ a.nav-brand-logo:hover {
   font-weight: 700;
   display: block;
   padding: 7px 0;
+}
+.categories-list li a:hover {
+  color: var(--theme-text-primary);
 }
 .categories-list li a::before {
   content: "- ";
@@ -520,7 +526,32 @@ footer {
 .singel-blog-border {
   border: 1px solid rgb(253, 215, 215);
 }
-
+/* pagination ------------------- */
+.page-links {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+}
+.page-links {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+  gap: 10px;
+}
+.page-links li a {
+  display: block;
+  color: gray;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 200, 200);
+}
+.page-links li a.page-active {
+  background: orange;
+  color: white;
+}
+.page-links li a:hover {
+  background: orange;
+  color: white;
+}
 /*
 ===========================================================
    End of Stylesheet
