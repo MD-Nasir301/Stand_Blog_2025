@@ -438,11 +438,39 @@ footer {
   margin: 0 10px;
   display: flex;
   align-items: center;
-  background: url('../img/heading-bg.jpg') no-repeat center/cover;
+  background: url("../img/heading-bg.jpg") no-repeat center/cover;
+  margin-bottom: 100px;
 }
 .banner-text h1 {
   font-size: 36px;
   margin-top: 5px;
+}
+.about-us-area {
+  text-align: center;
+}
+.about-us-area img {
+  margin-bottom: 40px;
+}
+.about-us-area p {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.about-us-area h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.about-text-1 {
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(255, 221, 221, 0.885);
+}
+.about-text-2,
+.about-text-3,
+.about-text-4 {
+  display: flex;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(255, 221, 221, 0.885);
+  gap: 50px;
 }
 
 /*
