@@ -559,7 +559,9 @@ footer {
   color: white;
 }
 /* Post-details page ----------------------------------------- */
-
+.comment-section {
+  margin-bottom: 30px;
+}
 .comment-section h2 {
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -600,6 +602,69 @@ footer {
 }
 .reply.comment-content {
   width: 80%;
+}
+.form-area .title {
+  color: black;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(255, 212, 212);
+}
+.form input,
+textarea {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid rgb(249, 215, 215);
+}
+.name_email {
+  display: flex;
+  gap: 30px;
+}
+textarea.comment-box {
+  min-width: 100%;
+  height: 220px;
+}
+textarea.comment-box::placeholder {
+  font-size: 15px;
+  color: var(--text-gray);
+}
+button.submit-btn {
+  display: block;
+  padding: 15px 20px;
+  border: 0;
+  margin-top: 30px;
+}
+button.submit-btn:hover {
+  font-weight: 700;
+}
+
+/* Contact-us page ----------------------------- */
+.contact-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.contact-us.form-area {
+  width: 87%;
+}
+.contact-info .title {
+  color: var(--text-black);
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(254, 219, 219);
+}
+.contact-info-list li {
+  padding: 20px 35px 20px 5px;
+  border-bottom: 1px solid rgb(254, 219, 219);
+  font-size: 18px;
+  font-weight: 900;
+}
+.contact-info-list li span {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--text-gray);
+  margin-top: 5px;
+  display: inline-block;
 }
 
 /*
