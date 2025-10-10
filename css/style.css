@@ -426,6 +426,9 @@ footer {
   font-size: 14px;
   font-weight: 500;
 }
+.footer-social-links li a:hover {
+  color: rgb(220, 103, 1);
+}
 
 .copy-write-info {
   text-align: center;
@@ -478,7 +481,7 @@ footer {
   border-bottom: 1px solid rgba(255, 221, 221, 0.885);
   gap: 50px;
 }
-/* social links------------ */
+/* about-us page social links------------ */
 .social-links-area {
   margin-top: 50px;
 }
@@ -497,6 +500,9 @@ footer {
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
+}
+.social-links li a:hover {
+  color: rgb(153, 237, 18);
 }
 /* blog page----------------------- */
 
