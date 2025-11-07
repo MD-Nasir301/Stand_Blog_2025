@@ -648,6 +648,9 @@ button.submit-btn:hover {
 .contact-us.form-area {
   width: 87%;
 }
+.contact-us textarea {
+ resize: vertical;
+}
 .contact-info .title {
   color: var(--text-black);
   margin-bottom: 10px;
